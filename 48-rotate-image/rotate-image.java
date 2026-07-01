@@ -1,16 +1,20 @@
 class Solution {
     public void rotate(int[][] matrix) {
         // transform
-        boolean[][] swap = new boolean[matrix.length][matrix.length];
+        // boolean[][] swap = new boolean[matrix.length][matrix.length];
         for(int row = 0; row<matrix.length;row++){
-            for(int col = 0; col < matrix[row].length; col++){
-                if(!swap[row][col]){
-                    int temp = matrix[row][col];
+            for(int col = row+1; col < matrix[row].length; col++){
+                // if(!swap[row][col]){
+                //     int temp = matrix[row][col];
+                //     matrix[row][col] = matrix[col][row];
+                //     matrix[col][row] = temp;
+                //     swap[row][col] = true;
+                //     swap[col][row] = true;
+                // }
+
+                int temp = matrix[row][col];
                     matrix[row][col] = matrix[col][row];
                     matrix[col][row] = temp;
-                    swap[row][col] = true;
-                    swap[col][row] = true;
-                }
                 
             }
         }
