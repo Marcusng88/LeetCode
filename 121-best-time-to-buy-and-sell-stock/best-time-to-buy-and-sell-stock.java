@@ -13,7 +13,7 @@ class Solution {
 
         // return res;
 
-        // greedy algo approach
+        // greedy algo approach , faster
         int min  = Integer.MAX_VALUE;
         int maxProfit = 0;
         for(int price: prices){
