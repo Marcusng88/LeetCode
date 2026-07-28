@@ -20,6 +20,7 @@ class Solution {
                 continue;
             }
 
+            // remember this mistake made , when frequency is one , do not insert at start index , should be insert at middle , then only the palindrome conditions hold
             if(arr[currentIdx]==1){
                 resArr[s.length() / 2] =(char)( currentIdx + 'a');
                 --arr[currentIdx];
