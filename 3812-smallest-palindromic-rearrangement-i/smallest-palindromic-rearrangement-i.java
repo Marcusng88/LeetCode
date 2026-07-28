@@ -33,11 +33,6 @@ class Solution {
             arr[currentIdx] -=2;
         }
 
-        for(char ch: resArr){
-            res.append(ch);
-        }
-
-
-        return res.toString();
+        return new String(resArr);
     }
 }
