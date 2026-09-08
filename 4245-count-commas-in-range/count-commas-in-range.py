@@ -7,7 +7,6 @@ class Solution:
         if len(s) % 3 == 0:
             n_comma -=1
         check = n_comma * 3
-        print(check)
         res = 0
         for i in range(1,n+1):
             if len(str(i)) > check:
